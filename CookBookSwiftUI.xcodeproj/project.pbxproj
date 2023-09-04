@@ -11,6 +11,11 @@
 		FBC5DEBB2AA579C500B29CFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DEBA2AA579C500B29CFD /* ContentView.swift */; };
 		FBC5DEBD2AA579C700B29CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC5DEBC2AA579C700B29CFD /* Assets.xcassets */; };
 		FBC5DEC02AA579C700B29CFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC5DEBF2AA579C700B29CFD /* Preview Assets.xcassets */; };
+		FBC5DEC82AA57A5300B29CFD /* TabViewExtension+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DEC72AA57A5300B29CFD /* TabViewExtension+Modifier.swift */; };
+		FBC5DECD2AA5807000B29CFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DECC2AA5807000B29CFD /* Constants.swift */; };
+		FBC5DECF2AA5860000B29CFD /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DECE2AA5860000B29CFD /* MenuItemView.swift */; };
+		FBC5DED12AA5889500B29CFD /* TextExtension+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED02AA5889500B29CFD /* TextExtension+Modifier.swift */; };
+		FBC5DED32AA58BF200B29CFD /* AppleBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		FBC5DEBA2AA579C500B29CFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBC5DEBC2AA579C700B29CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBC5DEBF2AA579C700B29CFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBC5DEC72AA57A5300B29CFD /* TabViewExtension+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabViewExtension+Modifier.swift"; sourceTree = "<group>"; };
+		FBC5DECC2AA5807000B29CFD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FBC5DECE2AA5860000B29CFD /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		FBC5DED02AA5889500B29CFD /* TextExtension+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextExtension+Modifier.swift"; sourceTree = "<group>"; };
+		FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleBottomSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,12 @@
 		FBC5DEB72AA579C500B29CFD /* CookBookSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */,
-				FBC5DEBA2AA579C500B29CFD /* ContentView.swift */,
 				FBC5DEBC2AA579C700B29CFD /* Assets.xcassets */,
+				FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */,
+				FBC5DECA2AA57FDC00B29CFD /* AppView */,
+				FBC5DECB2AA57FE400B29CFD /* Views */,
+				FBC5DEC92AA57FCD00B29CFD /* Helpers */,
+				FBC5DEC62AA57A2500B29CFD /* Extensions */,
 				FBC5DEBE2AA579C700B29CFD /* Preview Content */,
 			);
 			path = CookBookSwiftUI;
@@ -65,6 +78,40 @@
 				FBC5DEBF2AA579C700B29CFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBC5DEC62AA57A2500B29CFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FBC5DEC72AA57A5300B29CFD /* TabViewExtension+Modifier.swift */,
+				FBC5DED02AA5889500B29CFD /* TextExtension+Modifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FBC5DEC92AA57FCD00B29CFD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FBC5DECC2AA5807000B29CFD /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FBC5DECA2AA57FDC00B29CFD /* AppView */ = {
+			isa = PBXGroup;
+			children = (
+				FBC5DEBA2AA579C500B29CFD /* ContentView.swift */,
+				FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */,
+			);
+			path = AppView;
+			sourceTree = "<group>";
+		};
+		FBC5DECB2AA57FE400B29CFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBC5DECE2AA5860000B29CFD /* MenuItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC5DED32AA58BF200B29CFD /* AppleBottomSheetView.swift in Sources */,
 				FBC5DEBB2AA579C500B29CFD /* ContentView.swift in Sources */,
+				FBC5DEC82AA57A5300B29CFD /* TabViewExtension+Modifier.swift in Sources */,
 				FBC5DEB92AA579C500B29CFD /* CookBookSwiftUIApp.swift in Sources */,
+				FBC5DECD2AA5807000B29CFD /* Constants.swift in Sources */,
+				FBC5DECF2AA5860000B29CFD /* MenuItemView.swift in Sources */,
+				FBC5DED12AA5889500B29CFD /* TextExtension+Modifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
