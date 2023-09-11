@@ -19,7 +19,7 @@ struct ContentView: View {
                         
                         NavigationLink(value: menuItem) {
                             MenuItemView(menuItem: menuItem)
-                                .frame(width: .infinity, height: 80)
+                                .frame(height: 80)
                         }
                     }
                 }

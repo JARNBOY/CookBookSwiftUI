@@ -18,6 +18,7 @@ struct MenuItemView: View {
                 .modifier(TextMenuItemModifier())
             Spacer()
         }
+        .frame(width: .infinity, height: 80)
         .background(.blue)
         .cornerRadius(defaultCornerRadiusValue)
         .padding()

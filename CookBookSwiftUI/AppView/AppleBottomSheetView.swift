@@ -8,8 +8,63 @@
 import SwiftUI
 
 struct AppleBottomSheetView: View {
+    
+    @StateObject var bindableObject = WindowSharedModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TabView(selection: $bindableObject.activeTab) {
+            
+            NavigationStack {
+                Text("People")
+            }
+            .tag(Tab.people)
+            .hideNativeBar()
+            
+            NavigationStack {
+                Text("Devices")
+            }
+            .tag(Tab.devices)
+            .hideNativeBar()
+            
+            NavigationStack {
+                Text("Items")
+            }
+            .tag(Tab.items)
+            .hideNativeBar()
+            
+            NavigationStack {
+                Text("Me")
+            }
+            .tag(Tab.me)
+            .hideNativeBar()
+        }
+        .tabSheet(initialHeight: 100, sheetCornerRadius: 15) {
+            NavigationStack {
+                ScrollView {
+                    
+                }
+                .scrollIndicators(.hidden)
+                .toolbar {
+                    //Leading Title
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Text(bindableObject.activeTab.title)
+                            .font(.title3.bold())
+                    }
+                    
+                    //Show Plus Button for only Devices
+                    if bindableObject.activeTab == .devices {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button {
+                                print("click plus")
+                            } label: {
+                                Image(systemName: "plus")
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

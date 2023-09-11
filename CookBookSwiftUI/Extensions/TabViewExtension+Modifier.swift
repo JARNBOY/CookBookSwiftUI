@@ -8,6 +8,15 @@
 import SwiftUI
 
 //Custom View Modifiers
+extension View {
+    @ViewBuilder
+    func hideNativeBar() -> some View {
+        self
+            .toolbar(.hidden, for: .tabBar)
+    }
+}
+
+//Custom TabView Modifiers
 extension TabView {
     @ViewBuilder
     func tabSheet<SheetContent: View>(

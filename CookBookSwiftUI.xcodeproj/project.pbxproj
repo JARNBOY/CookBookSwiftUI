@@ -16,6 +16,8 @@
 		FBC5DECF2AA5860000B29CFD /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DECE2AA5860000B29CFD /* MenuItemView.swift */; };
 		FBC5DED12AA5889500B29CFD /* TextExtension+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED02AA5889500B29CFD /* TextExtension+Modifier.swift */; };
 		FBC5DED32AA58BF200B29CFD /* AppleBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */; };
+		FBC5DED72AA5936B00B29CFD /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED62AA5936B00B29CFD /* Tab.swift */; };
+		FBC5DED92AA5938200B29CFD /* WindowSharedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED82AA5938200B29CFD /* WindowSharedModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		FBC5DECE2AA5860000B29CFD /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 		FBC5DED02AA5889500B29CFD /* TextExtension+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextExtension+Modifier.swift"; sourceTree = "<group>"; };
 		FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleBottomSheetView.swift; sourceTree = "<group>"; };
+		FBC5DED62AA5936B00B29CFD /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		FBC5DED82AA5938200B29CFD /* WindowSharedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSharedModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */,
 				FBC5DECA2AA57FDC00B29CFD /* AppView */,
 				FBC5DECB2AA57FE400B29CFD /* Views */,
+				FBC5DED52AA5935300B29CFD /* ViewModels */,
+				FBC5DED42AA5934E00B29CFD /* Models */,
 				FBC5DEC92AA57FCD00B29CFD /* Helpers */,
 				FBC5DEC62AA57A2500B29CFD /* Extensions */,
 				FBC5DEBE2AA579C700B29CFD /* Preview Content */,
@@ -112,6 +118,22 @@
 				FBC5DECE2AA5860000B29CFD /* MenuItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FBC5DED42AA5934E00B29CFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBC5DED62AA5936B00B29CFD /* Tab.swift */,
+				FBC5DED82AA5938200B29CFD /* WindowSharedModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBC5DED52AA5935300B29CFD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +209,8 @@
 				FBC5DED32AA58BF200B29CFD /* AppleBottomSheetView.swift in Sources */,
 				FBC5DEBB2AA579C500B29CFD /* ContentView.swift in Sources */,
 				FBC5DEC82AA57A5300B29CFD /* TabViewExtension+Modifier.swift in Sources */,
+				FBC5DED92AA5938200B29CFD /* WindowSharedModel.swift in Sources */,
+				FBC5DED72AA5936B00B29CFD /* Tab.swift in Sources */,
 				FBC5DEB92AA579C500B29CFD /* CookBookSwiftUIApp.swift in Sources */,
 				FBC5DECD2AA5807000B29CFD /* Constants.swift in Sources */,
 				FBC5DECF2AA5860000B29CFD /* MenuItemView.swift in Sources */,
@@ -327,6 +351,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +381,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
