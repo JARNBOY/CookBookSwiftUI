@@ -40,7 +40,7 @@ fileprivate struct BottomSheetModifier<SheetContent: View>: ViewModifier {
         content
             .sheet(isPresented: $showSheet) {
                 sheetView
-                    .presentationDetents([.height(initialHeight), .medium, .large])
+                    .presentationDetents([.height(initialHeight), .medium, .fraction(0.99)])
                     .presentationCornerRadius(sheetCornerRadius)
                     .presentationBackgroundInteraction(.enabled(upThrough: .medium))
                     .interactiveDismissDisabled()
