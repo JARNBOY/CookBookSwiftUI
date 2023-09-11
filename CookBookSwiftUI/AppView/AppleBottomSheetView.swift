@@ -42,7 +42,10 @@ struct AppleBottomSheetView: View {
         .tabSheet(initialHeight: 100, sheetCornerRadius: 15) {
             NavigationStack {
                 ScrollView {
-                    
+                    //Showing Some Sample Mock Devices
+                    DeviceRowView("iphone", "Papon's iPhone", "Home")
+                    DeviceRowView("ipad", "Papon's iPad", "Home")
+                    DeviceRowView("applewatch", "Papon's Apple Watch", "Home")
                 }
                 .scrollIndicators(.hidden)
                 .toolbar {
@@ -64,6 +67,31 @@ struct AppleBottomSheetView: View {
                     }
                 }
             }
+        }
+    }
+    
+    //MARK: Device Row View
+    @ViewBuilder
+    func DeviceRowView(_ image: String, _ title: String, _ subTitle: String) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: image)
+                .font(.title2)
+                .padding(12)
+                .background(.background, in: Circle())
+            
+            VStack(alignment: .leading, spacing: 4) {
+                Text(title)
+                    .fontWeight(.bold)
+                
+                Text(subTitle)
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Text("0 km")
+                .font(.callout)
+                .foregroundColor(.gray)
         }
     }
 }
