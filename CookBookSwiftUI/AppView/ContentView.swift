@@ -27,6 +27,7 @@ struct ContentView: View {
             .navigationDestination(for: String.self) { textValue in
                 if textValue == "BottomSheet" {
                     AppleBottomSheetView()
+                        .environmentObject(WindowSharedModel())
                 }
             }
         }

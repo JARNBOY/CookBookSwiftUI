@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct AppleBottomSheetView: View {
-    
-    @StateObject var bindableObject = WindowSharedModel()
+    @EnvironmentObject private var bindableObject: WindowSharedModel
+    @Environment(\.sceneDelegate) private var sceneDelegate
     
     var body: some View {
         
@@ -93,6 +93,41 @@ struct AppleBottomSheetView: View {
                 .font(.callout)
                 .foregroundColor(.gray)
         }
+    }
+}
+
+//MARK: Custom Tab Bar
+struct CustomBar: View {
+    @EnvironmentObject private var windowShareModel : WindowSharedModel
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            Divider()
+            
+            HStack(spacing: 0) {
+                ForEach(Tab.allCases, id: \.rawValue) { tab in
+                    Button {
+                        windowShareModel.activeTab = tab
+                    } label: {
+                        VStack {
+                            Image(systemName: tab.rawValue)
+                                .font(.title2)
+                            
+                            Text(tab.title)
+                                .font(.caption)
+                        }//: VStack
+                        .foregroundStyle(windowShareModel.activeTab == tab ? Color.accentColor : .gray)
+                        .frame(minWidth: .infinity, maxWidth: .infinity)
+                        .contentShape(Rectangle())
+                    }
+
+                }
+            }//:HStack
+            .frame(height: 55)
+        }//: VStack
+        .background(.regularMaterial)
+        
+        
     }
 }
 
