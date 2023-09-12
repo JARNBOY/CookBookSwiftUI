@@ -68,6 +68,10 @@ struct AppleBottomSheetView: View {
                 }
             }
         }
+        .onAppear {
+            guard sceneDelegate?.tabWindow == nil else { return }
+            sceneDelegate?.addTabBar(bindableObject)
+        }
     }
     
     //MARK: Device Row View

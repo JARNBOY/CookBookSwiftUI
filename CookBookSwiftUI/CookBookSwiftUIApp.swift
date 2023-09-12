@@ -24,6 +24,7 @@ struct CookBookSwiftUIApp: App {
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         let config = UISceneConfiguration(name: nil, sessionRole: connectingSceneSession.role)
+        config.delegateClass = SceneDelegate.self
         return config
     }
 }
@@ -40,10 +41,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let contentView = ContentView()
                 .environment(\.sceneDelegate, self) // Set the SceneDelegate in the environment
             
-//            // Your other window setup code here
-//
-//            // Assign contentView as the root view controller
-//            self.tabWindow?.rootViewController = UIHostingController(rootView: contentView)
+            // Your other window setup code here
+
+            // Assign contentView as the root view controller
+            self.tabWindow?.rootViewController = UIHostingController(rootView: contentView)
         }
     }
     
@@ -57,7 +58,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             CustomBar()
                 .environmentObject(windowShareModel)
         )
-        tabBarViewController.view.backgroundColor = .red
+        tabBarViewController.view.backgroundColor = .clear
         
         //Window
         let tabWindow = UIWindow(windowScene: scene)
