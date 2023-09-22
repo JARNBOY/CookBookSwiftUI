@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FB810FCC2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */; };
+		FB810FCF2ABD8D3C00688AF7 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FCE2ABD8D3C00688AF7 /* HoneymoonData.swift */; };
+		FB810FD12ABD8D6300688AF7 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FD02ABD8D6300688AF7 /* HoneymoonModel.swift */; };
 		FBC5DEB92AA579C500B29CFD /* CookBookSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */; };
 		FBC5DEBB2AA579C500B29CFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DEBA2AA579C500B29CFD /* ContentView.swift */; };
 		FBC5DEBD2AA579C700B29CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC5DEBC2AA579C700B29CFD /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCarouselHScrollView.swift; sourceTree = "<group>"; };
+		FB810FCE2ABD8D3C00688AF7 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
+		FB810FD02ABD8D6300688AF7 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 		FBC5DEB52AA579C500B29CFD /* CookBookSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBookSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookSwiftUIApp.swift; sourceTree = "<group>"; };
 		FBC5DEBA2AA579C500B29CFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,14 @@
 			children = (
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		FB810FCD2ABD8D2B00688AF7 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				FB810FCE2ABD8D3C00688AF7 /* HoneymoonData.swift */,
+			);
+			path = Datas;
 			sourceTree = "<group>";
 		};
 		FBC5DEAC2AA579C500B29CFD = {
@@ -108,6 +120,7 @@
 		FBC5DEC92AA57FCD00B29CFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FB810FCD2ABD8D2B00688AF7 /* Datas */,
 				FBC5DECC2AA5807000B29CFD /* Constants.swift */,
 			);
 			path = Helpers;
@@ -136,6 +149,7 @@
 			children = (
 				FBC5DED62AA5936B00B29CFD /* Tab.swift */,
 				FBC5DED82AA5938200B29CFD /* WindowSharedModel.swift */,
+				FB810FD02ABD8D6300688AF7 /* HoneymoonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB810FD12ABD8D6300688AF7 /* HoneymoonModel.swift in Sources */,
 				FBC5DED32AA58BF200B29CFD /* AppleBottomSheetView.swift in Sources */,
 				FBC5DEBB2AA579C500B29CFD /* ContentView.swift in Sources */,
 				FBC5DEC82AA57A5300B29CFD /* TabViewExtension+Modifier.swift in Sources */,
@@ -224,6 +239,7 @@
 				FBC5DED72AA5936B00B29CFD /* Tab.swift in Sources */,
 				FBC5DEB92AA579C500B29CFD /* CookBookSwiftUIApp.swift in Sources */,
 				FBC5DECD2AA5807000B29CFD /* Constants.swift in Sources */,
+				FB810FCF2ABD8D3C00688AF7 /* HoneymoonData.swift in Sources */,
 				FB810FCC2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift in Sources */,
 				FBC5DECF2AA5860000B29CFD /* MenuItemView.swift in Sources */,
 				FBC5DED12AA5889500B29CFD /* TextExtension+Modifier.swift in Sources */,
