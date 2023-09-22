@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Destination {
+struct Destination: Hashable {
   var place: String
   var country: String
   var image: String

@@ -10,6 +10,7 @@
 		FB810FCC2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */; };
 		FB810FCF2ABD8D3C00688AF7 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FCE2ABD8D3C00688AF7 /* HoneymoonData.swift */; };
 		FB810FD12ABD8D6300688AF7 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FD02ABD8D6300688AF7 /* HoneymoonModel.swift */; };
+		FBB6C4BD2AF2501700523EE6 /* NormalBottomSheetTranparentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB6C4BC2AF2501700523EE6 /* NormalBottomSheetTranparentView.swift */; };
 		FBC5DEB92AA579C500B29CFD /* CookBookSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */; };
 		FBC5DEBB2AA579C500B29CFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DEBA2AA579C500B29CFD /* ContentView.swift */; };
 		FBC5DEBD2AA579C700B29CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC5DEBC2AA579C700B29CFD /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCarouselHScrollView.swift; sourceTree = "<group>"; };
 		FB810FCE2ABD8D3C00688AF7 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		FB810FD02ABD8D6300688AF7 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
+		FBB6C4BC2AF2501700523EE6 /* NormalBottomSheetTranparentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalBottomSheetTranparentView.swift; sourceTree = "<group>"; };
 		FBC5DEB52AA579C500B29CFD /* CookBookSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBookSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookSwiftUIApp.swift; sourceTree = "<group>"; };
 		FBC5DEBA2AA579C500B29CFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				FBC5DEBA2AA579C500B29CFD /* ContentView.swift */,
 				FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */,
 				FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */,
+				FBB6C4BC2AF2501700523EE6 /* NormalBottomSheetTranparentView.swift */,
 			);
 			path = AppView;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				FBC5DEBB2AA579C500B29CFD /* ContentView.swift in Sources */,
 				FBC5DEC82AA57A5300B29CFD /* TabViewExtension+Modifier.swift in Sources */,
 				FBC5DED92AA5938200B29CFD /* WindowSharedModel.swift in Sources */,
+				FBB6C4BD2AF2501700523EE6 /* NormalBottomSheetTranparentView.swift in Sources */,
 				FBC5DED72AA5936B00B29CFD /* Tab.swift in Sources */,
 				FBC5DEB92AA579C500B29CFD /* CookBookSwiftUIApp.swift in Sources */,
 				FBC5DECD2AA5807000B29CFD /* Constants.swift in Sources */,
