@@ -25,9 +25,14 @@ struct ContentView: View {
                 }
             }
             .navigationDestination(for: String.self) { textValue in
-                if textValue == "BottomSheet" {
+                switch textValue {
+                case MenuType.bottomSheet.rawValue:
                     AppleBottomSheetView()
                         .environmentObject(WindowSharedModel())
+                case MenuType.parallaxCarousel.rawValue:
+                    ParallaxCarouselHScrollView()
+                default:
+                    Text("This Page need set router direction view")
                 }
             }
         }

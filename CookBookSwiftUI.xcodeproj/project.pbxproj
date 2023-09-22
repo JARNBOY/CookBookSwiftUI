@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB810FCC2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */; };
 		FBC5DEB92AA579C500B29CFD /* CookBookSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */; };
 		FBC5DEBB2AA579C500B29CFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DEBA2AA579C500B29CFD /* ContentView.swift */; };
 		FBC5DEBD2AA579C700B29CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC5DEBC2AA579C700B29CFD /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCarouselHScrollView.swift; sourceTree = "<group>"; };
 		FBC5DEB52AA579C500B29CFD /* CookBookSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBookSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC5DEB82AA579C500B29CFD /* CookBookSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookSwiftUIApp.swift; sourceTree = "<group>"; };
 		FBC5DEBA2AA579C500B29CFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB810FC82ABD835200688AF7 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 		FBC5DEAC2AA579C500B29CFD = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +80,7 @@
 				FBC5DECB2AA57FE400B29CFD /* Views */,
 				FBC5DED52AA5935300B29CFD /* ViewModels */,
 				FBC5DED42AA5934E00B29CFD /* Models */,
+				FB810FC82ABD835200688AF7 /* Routers */,
 				FBC5DEC92AA57FCD00B29CFD /* Helpers */,
 				FBC5DEC62AA57A2500B29CFD /* Extensions */,
 				FBC5DEBE2AA579C700B29CFD /* Preview Content */,
@@ -108,6 +118,7 @@
 			children = (
 				FBC5DEBA2AA579C500B29CFD /* ContentView.swift */,
 				FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */,
+				FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */,
 			);
 			path = AppView;
 			sourceTree = "<group>";
@@ -213,6 +224,7 @@
 				FBC5DED72AA5936B00B29CFD /* Tab.swift in Sources */,
 				FBC5DEB92AA579C500B29CFD /* CookBookSwiftUIApp.swift in Sources */,
 				FBC5DECD2AA5807000B29CFD /* Constants.swift in Sources */,
+				FB810FCC2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift in Sources */,
 				FBC5DECF2AA5860000B29CFD /* MenuItemView.swift in Sources */,
 				FBC5DED12AA5889500B29CFD /* TextExtension+Modifier.swift in Sources */,
 			);

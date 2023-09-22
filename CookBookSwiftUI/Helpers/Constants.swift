@@ -7,11 +7,15 @@
 
 import Foundation
 
+enum MenuType: String {
+    case bottomSheet
+    case parallaxCarousel
+}
 //MARK: DATA
 let listMenuCookBook: [String] = [
-    "BottomSheet",
-    "Carousel",
-    "Parallax"
+    MenuType.bottomSheet.rawValue,
+    MenuType.parallaxCarousel.rawValue,
+    "Add more?"
 ]
 
 //MARK: View Common Property
