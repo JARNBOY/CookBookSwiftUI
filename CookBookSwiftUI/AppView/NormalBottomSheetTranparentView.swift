@@ -12,6 +12,7 @@ struct NormalBottomSheetTranparentView: View {
     
     @State private var backgroundOpacity: Double = 0.0
     @State private var isShowBottomSheet = false
+    @State private var isShowBottomSheetClearBackground = false
 
     var body: some View {
         ZStack {
@@ -30,14 +31,37 @@ struct NormalBottomSheetTranparentView: View {
                         .foregroundColor(.blue)
                         .cornerRadius(10)
                 }
+                
+                Button(action: {
+                    isShowBottomSheetClearBackground.toggle()
+                }) {
+                    Text("Toggle Bottom Sheet Full Screen and clear background")
+                        .padding()
+                        .background(Color.white)
+                        .foregroundColor(.blue)
+                        .cornerRadius(10)
+                }
             }
         }
         .fullScreenCover(isPresented: $isShowBottomSheet) {
-            accountBottomSheetView
+            accountBottomSheetView()
+        }
+        .overlay {
+            if isShowBottomSheetClearBackground {
+                ZStack {
+                    Color.black
+                        .opacity(backgroundOpacity)
+                    
+                    anotherBottomSheetView()
+                }
+                .ignoresSafeArea(.all)
+               
+            }
         }
     }
     
-    var accountBottomSheetView: some View {
+    @ViewBuilder
+    private func accountBottomSheetView() -> some View {
         VStack{
             Spacer()
             BottomSheetView(title: "NAmeeeeee",
@@ -87,9 +111,55 @@ struct NormalBottomSheetTranparentView: View {
                 }
             }
         }
-        
-        
     }
+    
+    @ViewBuilder
+    private func anotherBottomSheetView() -> some View {
+        VStack{
+            Spacer()
+            BottomSheetView(title: "NAmeeeeee",
+                            isOpen: $isShowBottomSheetClearBackground,
+                            maxHeight: 240,
+                            content: {
+                VStack {
+                    Button(action: {
+                        isShowBottomSheetClearBackground = false
+                    }) {
+                        Text("logout")
+                            .foregroundColor(.white)
+                        .padding()
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .cornerRadius(20)
+                    
+                    
+                    Button(action: {
+                        isShowBottomSheetClearBackground = false
+                    }) {
+                        Text("delete_account")
+                            .foregroundColor(Color.gray)
+                            .padding()
+                    }
+                    .frame(height: 50)
+                }
+                .padding(EdgeInsets(top: 30, leading: 16, bottom: 30, trailing: 16))
+            })
+        }
+        .ignoresSafeArea()
+        .transition(.move(edge: .trailing))
+        .onDisappear() {
+            withAnimation(.easeIn) {
+                backgroundOpacity = 0.0
+            }
+        }
+        .onAppear() {
+            withAnimation(.easeOut) {
+                backgroundOpacity = 0.3
+            }
+        }
+    }
+
 }
 
 struct BottomSheetView<Content: View>: View {
