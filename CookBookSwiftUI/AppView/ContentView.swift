@@ -26,8 +26,12 @@ struct ContentView: View {
             }
             .navigationDestination(for: String.self) { textValue in
                 switch textValue {
+                case MenuType.scrollHeaderParallax.rawValue:
+                    ScrollViewHeaderView()
+                    
                 case MenuType.normal_bottomSheet_fullScreen.rawValue:
                     NormalBottomSheetTranparentView()
+                    
                 case MenuType.bottomSheet.rawValue:
                     AppleBottomSheetView()
                         .environmentObject(WindowSharedModel())
