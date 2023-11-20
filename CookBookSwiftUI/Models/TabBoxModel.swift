@@ -74,12 +74,8 @@ struct TabBoxView: View {
         }
         .frame(minHeight: 56)
         .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .strokeBorder(colorBackground, lineWidth: 0)
-                    .background(
-                        RoundedRectangle(cornerRadius: 20).fill(colorBackground.opacity(0.3))
-                    )
-            )
+            RoundedRectangle(cornerRadius: 16).fill(colorBackground.opacity(0.3))
+        )
         .padding(.all, 16)
     }
 }
