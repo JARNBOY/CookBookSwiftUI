@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB38A4102B0B376A00163371 /* TabBoxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB38A40F2B0B376A00163371 /* TabBoxModel.swift */; };
+		FB38A4122B0B43D600163371 /* TabBoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB38A4112B0B43D600163371 /* TabBoxViewModel.swift */; };
 		FB810FCC2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */; };
 		FB810FCF2ABD8D3C00688AF7 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FCE2ABD8D3C00688AF7 /* HoneymoonData.swift */; };
 		FB810FD12ABD8D6300688AF7 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB810FD02ABD8D6300688AF7 /* HoneymoonModel.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB38A40F2B0B376A00163371 /* TabBoxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBoxModel.swift; sourceTree = "<group>"; };
+		FB38A4112B0B43D600163371 /* TabBoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBoxViewModel.swift; sourceTree = "<group>"; };
 		FB810FCB2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCarouselHScrollView.swift; sourceTree = "<group>"; };
 		FB810FCE2ABD8D3C00688AF7 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		FB810FD02ABD8D6300688AF7 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				FBC5DED62AA5936B00B29CFD /* Tab.swift */,
 				FBC5DED82AA5938200B29CFD /* WindowSharedModel.swift */,
 				FB810FD02ABD8D6300688AF7 /* HoneymoonModel.swift */,
+				FB38A40F2B0B376A00163371 /* TabBoxModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 		FBC5DED52AA5935300B29CFD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FB38A4112B0B43D600163371 /* TabBoxViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 				FBB800E92B03A5D8001D3E4A /* MenuButtonView.swift in Sources */,
 				FBA694F02AF4A63500CA0D75 /* ScrollViewHeaderView.swift in Sources */,
 				FBC5DEC82AA57A5300B29CFD /* TabViewExtension+Modifier.swift in Sources */,
+				FB38A4122B0B43D600163371 /* TabBoxViewModel.swift in Sources */,
 				FBC5DED92AA5938200B29CFD /* WindowSharedModel.swift in Sources */,
 				FBB6C4BD2AF2501700523EE6 /* NormalBottomSheetTranparentView.swift in Sources */,
 				FBC5DED72AA5936B00B29CFD /* Tab.swift in Sources */,
@@ -253,6 +260,7 @@
 				FBC5DECD2AA5807000B29CFD /* Constants.swift in Sources */,
 				FB810FCF2ABD8D3C00688AF7 /* HoneymoonData.swift in Sources */,
 				FB810FCC2ABD852000688AF7 /* ParallaxCarouselHScrollView.swift in Sources */,
+				FB38A4102B0B376A00163371 /* TabBoxModel.swift in Sources */,
 				FBC5DECF2AA5860000B29CFD /* MenuItemView.swift in Sources */,
 				FBC5DED12AA5889500B29CFD /* TextExtension+Modifier.swift in Sources */,
 			);

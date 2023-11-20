@@ -9,12 +9,32 @@ import SwiftUI
 
 struct ScrollViewHeaderView: View {
     
+    @ObservedObject private var viewModel = TabBoxViewModel()
+    
     var body: some View {
         ScrollView {
             ParallaxEffect()
+            if viewModel.isShowTabBox {
+                AnyView(getTabBoxView())
+            }
             HoneymoonListView()
         }
+        .onAppear(perform: {
+            viewModel.assumeRequestAPI()
+        })
         .ignoresSafeArea()
+    }
+    
+    
+    private func getTabBoxView() -> any View {
+        switch viewModel.tabBox {
+        case .infoOneRequest:
+            return TabBoxInfoOneRequestView(display: viewModel.tabboxVMDisplay)
+        case .infoMoreRequest:
+            return TabBoxInfoMoreOneRequestView(display: viewModel.tabboxVMDisplay)
+        case .rejectRequest:
+            return TabBoxInfoOneRequestView(display: viewModel.tabboxVMDisplay)
+        }
     }
 }
 
