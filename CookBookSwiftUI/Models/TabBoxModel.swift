@@ -15,9 +15,8 @@ enum TabBox {
     }
     
     enum Style {
-        case infoOneRequest
-        case infoMoreRequest
-        case rejectRequest
+        case infoDisplayTitleNoDetail
+        case infoDisplayTitleMoreDetail
     }
     
     struct ViewModel {
@@ -34,7 +33,7 @@ enum TabBox {
 }
 
 #Preview {
-    TabBoxView(display: TabBox.ViewModel(iconBox: "plus", title: "คำขอเข้าร่วมบ้าน", detail: "คำขอเข้าร่วมบ้าน คำขอเข้าร่วมบ้าน คำขอเข้าร่วมบ้าน", labelButton: "ดูรายละเอียด", iconClose: "xmark", stateBox: .info, styleBox: .infoMoreRequest))
+    TabBoxView(display: TabBox.ViewModel(iconBox: "plus", title: "คำขอเข้าร่วมบ้าน", detail: "คำขอเข้าร่วมบ้าน คำขอเข้าร่วมบ้าน คำขอเข้าร่วมบ้าน", labelButton: "ดูรายละเอียด", iconClose: "xmark", stateBox: .rejected, styleBox: .infoDisplayTitleMoreDetail))
 }
 
 struct TabBoxView: View {
@@ -54,7 +53,7 @@ struct TabBoxView: View {
             VStack {
                 Text(display?.title ?? "")
                     .padding(8)
-                if display?.styleBox == .infoMoreRequest {
+                if display?.styleBox == .infoDisplayTitleMoreDetail {
                     Text(display?.detail ?? "")
                         .padding(8)
                 }

@@ -16,6 +16,7 @@ struct ScrollViewHeaderView: View {
             ParallaxEffect()
             if viewModel.isShowTabBox {
                 TabBoxView(display: viewModel.tabboxVMDisplay)
+                    .frame(minHeight: 56)
             }
             HoneymoonListView()
         }
