@@ -19,6 +19,6 @@ class TabBoxViewModel: ObservableObject {
         let title = ""
         let detail = ""
         let labelButton = "ดูรายละเอียด"
-        self.tabboxVMDisplay = TabBox.ViewModel(iconBox: "plus", title: "คำขอเข้าร่วมบ้าน", detail: "", labelButton: "ดูรายละเอียด", iconClose: "xmark", stateBox: .info)
+        self.tabboxVMDisplay = TabBox.ViewModel(iconBox: "plus", title: "คำขอเข้าร่วมบ้าน", detail: "", labelButton: "ดูรายละเอียด", iconClose: "xmark", stateBox: .info, styleBox: tabBox)
     }
 }

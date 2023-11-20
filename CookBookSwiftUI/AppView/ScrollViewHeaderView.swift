@@ -15,7 +15,7 @@ struct ScrollViewHeaderView: View {
         ScrollView {
             ParallaxEffect()
             if viewModel.isShowTabBox {
-                AnyView(getTabBoxView())
+                TabBoxView(display: viewModel.tabboxVMDisplay)
             }
             HoneymoonListView()
         }
@@ -23,18 +23,6 @@ struct ScrollViewHeaderView: View {
             viewModel.assumeRequestAPI()
         })
         .ignoresSafeArea()
-    }
-    
-    
-    private func getTabBoxView() -> any View {
-        switch viewModel.tabBox {
-        case .infoOneRequest:
-            return TabBoxInfoOneRequestView(display: viewModel.tabboxVMDisplay)
-        case .infoMoreRequest:
-            return TabBoxInfoMoreOneRequestView(display: viewModel.tabboxVMDisplay)
-        case .rejectRequest:
-            return TabBoxInfoOneRequestView(display: viewModel.tabboxVMDisplay)
-        }
     }
 }
 
