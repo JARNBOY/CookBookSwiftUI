@@ -32,13 +32,14 @@ enum TabBox {
     
 }
 
-#Preview {
-    TabBoxView(display: TabBox.ViewModel(iconBox: "plus", title: "คำขอเข้าร่วมบ้าน", detail: "คำขอเข้าร่วมบ้าน คำขอเข้าร่วมบ้าน คำขอเข้าร่วมบ้าน", labelButton: "ดูรายละเอียด", iconClose: "xmark", stateBox: .rejected, styleBox: .infoDisplayTitleMoreDetail))
-}
-
+//#Preview {
+//    TabBoxView(display: TabBox.ViewModel(iconBox: "plus", title: "คำขอเข้าร่วมบ้าน", detail: "คำขอเข้าร่วมบ้าน คำขอเข้าร่วมบ้าน คำขอเข้าร่วมบ้าน", labelButton: "ดูรายละเอียด", iconClose: "xmark", stateBox: .rejected, styleBox: .infoDisplayTitleMoreDetail))
+//}
+//
 struct TabBoxView: View {
     
     var display: TabBox.ViewModel?
+    @ObservedObject var viewModel: PassDataViewModel = PassDataViewModel(isSheetPresented: false)
     
     var body: some View {
         
@@ -64,6 +65,9 @@ struct TabBoxView: View {
                 .underline(true)
                 .frame(width: 98)
                 .padding(8)
+                .onTapGesture(perform: {
+                    viewModel.isSheetPresented = true
+                })
             
             Image(systemName: display?.iconClose ?? "")
                 .font(.title2)
@@ -76,6 +80,12 @@ struct TabBoxView: View {
             RoundedRectangle(cornerRadius: 16).fill(colorBackground.opacity(0.3))
         )
         .padding(.all, 16)
+        .sheet(isPresented: $viewModel.isSheetPresented) {
+            viewModel.isSheetPresented = false
+        } content: {
+            PageToSheetView(viewModel: viewModel)
+        }
+
     }
 }
 

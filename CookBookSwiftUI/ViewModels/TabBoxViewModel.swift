@@ -13,6 +13,7 @@ class TabBoxViewModel: ObservableObject {
     var tabboxVMDisplay: TabBox.ViewModel?
     
     func assumeRequestAPI() {
+        
         tabBox = .infoDisplayTitleMoreDetail
         isShowTabBox = true
         

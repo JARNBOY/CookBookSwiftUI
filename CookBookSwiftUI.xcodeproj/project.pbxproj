@@ -26,6 +26,8 @@
 		FBC5DED32AA58BF200B29CFD /* AppleBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */; };
 		FBC5DED72AA5936B00B29CFD /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED62AA5936B00B29CFD /* Tab.swift */; };
 		FBC5DED92AA5938200B29CFD /* WindowSharedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC5DED82AA5938200B29CFD /* WindowSharedModel.swift */; };
+		FBCF29022B0E316C0037A1AA /* PassDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF29012B0E316C0037A1AA /* PassDataRouter.swift */; };
+		FBCF29042B0E32F00037A1AA /* PassDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF29032B0E32F00037A1AA /* PassDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		FBC5DED22AA58BF200B29CFD /* AppleBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleBottomSheetView.swift; sourceTree = "<group>"; };
 		FBC5DED62AA5936B00B29CFD /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		FBC5DED82AA5938200B29CFD /* WindowSharedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSharedModel.swift; sourceTree = "<group>"; };
+		FBCF29012B0E316C0037A1AA /* PassDataRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataRouter.swift; sourceTree = "<group>"; };
+		FBCF29032B0E32F00037A1AA /* PassDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		FB810FC82ABD835200688AF7 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				FBCF29012B0E316C0037A1AA /* PassDataRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				FB38A4112B0B43D600163371 /* TabBoxViewModel.swift */,
+				FBCF29032B0E32F00037A1AA /* PassDataViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -252,7 +258,9 @@
 				FBB800E92B03A5D8001D3E4A /* MenuButtonView.swift in Sources */,
 				FBA694F02AF4A63500CA0D75 /* ScrollViewHeaderView.swift in Sources */,
 				FBC5DEC82AA57A5300B29CFD /* TabViewExtension+Modifier.swift in Sources */,
+				FBCF29042B0E32F00037A1AA /* PassDataViewModel.swift in Sources */,
 				FB38A4122B0B43D600163371 /* TabBoxViewModel.swift in Sources */,
+				FBCF29022B0E316C0037A1AA /* PassDataRouter.swift in Sources */,
 				FBC5DED92AA5938200B29CFD /* WindowSharedModel.swift in Sources */,
 				FBB6C4BD2AF2501700523EE6 /* NormalBottomSheetTranparentView.swift in Sources */,
 				FBC5DED72AA5936B00B29CFD /* Tab.swift in Sources */,
